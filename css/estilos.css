@@ -1,0 +1,779 @@
+/*TODO*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+/*CARATULA*/
+.caratula {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/CARATULA/1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+
+    animation: animate 20s infinite;
+}
+
+@keyframes animate {
+    25% {
+        background-image: url(../img/CARATULA/2.jpg);
+        background-size: cover;
+    }
+    50% {
+        background-image: url(../img/CARATULA/3.jpg);
+        background-size: cover;
+    }
+
+    75% {
+        background-image: url(../img/CARATULA/6.jpg);
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(../img/CARATULA/1.jpg);
+        background-size: cover;
+    }
+}
+/*TEXTO*/
+.caratula .texto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.caratula .texto h1 {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    font-size: 70px;
+
+    text-align: end;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 50%;
+
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+.caratula .texto p {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    font-size: 30px;
+
+    text-align: end;
+    color: white;
+    font-family: 'Rubick', sans-serif;
+    margin-right: 50%;
+
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+}
+/*TITULO*/
+.caratula .titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 60px;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+
+    position: absolute;
+}
+
+.caratula .titulo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.caratula .titulo a img {
+    height: 40px;
+    margin: 0 30px 0 30px;
+}
+
+.caratula .titulo a h2 {
+    margin: 0;
+    color: white;
+}
+
+.caratula .titulo nav {
+    display: flex;
+}
+
+.caratula .titulo nav a {
+    margin-right: 30px;
+    
+    color: rgb(255, 255, 255);
+
+    transition: all 500ms ease-out;
+}
+
+.caratula .titulo nav a:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid;
+}
+/*DISEÑO*/
+.base {
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.base .blanco {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.base .blanco h2 {
+    margin: 0 0 50px 0;
+    border-left: 5px solid;
+}
+
+/*CAJA-ARRIBA*/
+.base .blanco .caja-arriba {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    gap: 5px;
+}
+
+.base .blanco .caja-arriba .diseño {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+
+.base .blanco .caja-arriba .diseño a {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.base .blanco .caja-arriba .diseño a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: all 500ms ease-out;
+}
+
+.base .blanco .caja-arriba .diseño a:hover img {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.base .blanco .caja-arriba .diseño .texto a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.base .blanco .caja-arriba .diseño .texto p {
+    margin: 0;
+}
+/*CAJA-ABAJO*/
+.base .blanco .caja-abajo {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    gap: 5px;
+
+    margin-top: 20px;
+}
+
+.base .blanco .caja-abajo .diseño {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+
+.base .blanco .caja-abajo .diseño a {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.base .blanco .caja-abajo .diseño a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: all 500ms ease-out;
+}
+
+.base .blanco .caja-abajo .diseño a:hover img {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.base .blanco .caja-abajo .diseño .texto a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.base .blanco .caja-abajo .diseño .texto p {
+    margin: 0;
+}
+/*PROPUESTA*/
+.propuesta h2 {
+    margin: 20px 0 20px 50px;
+    border-left: 5px solid;
+}
+/*CASA1*/
+.casa1 {
+    width: 100%;
+
+    display: flex;
+
+    position: relative;
+}
+
+.casa1 a {
+    width: 100%;
+    height: 600px;
+
+    overflow: hidden;
+}
+
+.casa1 a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: all 500ms ease-out; 
+}
+
+.casa1 a:hover img {
+    transform: scale(1.01);
+
+    filter: brightness(80%);
+}
+
+.casa1 .texto {
+    position: absolute;
+    
+    top: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 50px;
+}
+
+.casa1 .texto .aea a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    transition: all 500ms ease-out;
+}
+
+.casa1 .texto .aea a:hover {
+    color: rgb(255, 214, 214);
+}
+
+.casa1 .texto p {
+    color: white;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    width: 400px;
+}
+
+/*PROYECTO EN EJECUCION*/
+/*CASA DE PLAYA*/
+.playa {
+    width: 100%;
+    display: flex;
+}
+/*IZQUIERDA*/
+.playa .izquierda {
+    width: 70%;
+
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.playa .izquierda .arriba {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    gap: 5px;
+}
+
+.playa .izquierda .i1 {
+    width: 70%;
+    height: 100%;
+}
+
+.playa .izquierda .i2 {
+    width: 30%;
+    height: 100%;
+}
+
+.playa .izquierda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.playa .izquierda .abajo {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    gap: 5px;
+    flex-direction: row-reverse;
+}
+/*DERECHA*/
+.playa .derecha {
+    margin-left: 50px;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.playa .derecha a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: 'Rubick', sans-serif;
+    width: 250px;
+}
+
+.playa .derecha .texto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.playa .derecha .texto .letras {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(240, 240, 240);
+}
+
+.playa .derecha .texto .letras p {
+    margin: 0;
+}
+/*RAYA*/
+.raya {
+    width: 100%;
+    background-color: black;
+    height: 2px;
+
+    margin: 50px 0 50px 0;
+
+}
+/*CASA DE CAMPO*/
+.campo {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+/*IZQUIERDA*/
+.campo .izquierda {
+    width: 70%;
+
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo .izquierda .arriba {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    gap: 5px;
+}
+
+.campo .izquierda .i1 {
+    width: 70%;
+    height: 100%;
+}
+
+.campo .izquierda .i2 {
+    width: 30%;
+    height: 100%;
+}
+
+.campo .izquierda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.campo .izquierda .abajo {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    gap: 5px;
+    flex-direction: row-reverse;
+}
+/*DERECHA*/
+.campo .derecha {
+    margin-right: 50px;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.campo .derecha a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: 'Rubick', sans-serif;
+    width: 250px;
+}
+
+.campo .derecha .texto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo .derecha .texto .letras {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(240, 240, 240);
+}
+
+.campo .derecha .texto .letras p {
+    margin: 0;
+}
+/*MAQUETA*/
+.maqueta {
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/nazca.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.maqueta h2 {
+    color: white;
+    border-left: 5px solid;
+    margin: 0;
+}
+
+.maqueta p {
+    color: white;
+    margin: 10px 0 0 0;
+}
+/*PORTAFOLIO*/
+/*LIBRO*/
+h2 {
+    margin: 20px 0 20px 50px;
+    border-left: 5px solid;
+}
+.libro {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(240, 240, 240);
+}
+/*Book*/
+.book {
+    position: relative;
+    width: 500px;
+    height: 700px;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front,
+.back {
+    background-color: rgb(160, 122, 122);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 2px solid rgb(240, 240, 240);
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Paper flip effect*/
+
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/*Controller Buttoms*/
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 70px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    color: rgb(200, 244, 255);
+}
+
+i {
+    font-size: 80px;
+}
+
+/*Paper stack order*/
+
+#p1 {
+    z-index: 13;
+}
+
+#p2 {
+    z-index: 12;
+}
+
+#p3 {
+    z-index: 11;
+}
+
+#p4 {
+    z-index: 10;
+}
+
+#p5 {
+    z-index: 9;
+}
+
+#p6 {
+    z-index: 8;
+}
+
+#p7 {
+    z-index: 7;
+}
+
+#p8 {
+    z-index: 6;
+}
+
+#p9 {
+    z-index: 5;
+}
+
+#p10 {
+    z-index: 4;
+}
+
+#p11 {
+    z-index: 3;
+}
+
+#p12 {
+    z-index: 2;
+}
+
+#p13 {
+    z-index: 1;
+}
+/*YO*/
+.yo {
+    width: 100%;
+    background-image: url(../img/angel.jpg);
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.yo .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.yo .texto .contacto h2 {
+    margin: 0;
+    color: white;
+    border-left: 5px solid;
+}
+
+.yo .texto .datos {
+    display: flex;
+    flex-direction: column;
+}
+
+.yo .texto .datos h2 {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+}
+
+.yo .texto .datos p {
+    margin: 0;
+    color: white;
+}
+
+
+
+
+
+
+.yo img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    filter: grayscale(50%);
+}
+
+/*FIN*/
+.fin {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+
+.fin .caja {
+    width: 100%;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fin .caja .izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.fin .caja .izquierda a {
+    width: 125px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.fin .caja .izquierda a img {
+    filter: invert(100%);
+    width: 25px;
+}
+
+.fin .caja .izquierda .texto {
+    display: flex;
+}
+
+.fin .caja .izquierda .datos .texto h3 {
+    margin: 0;
+    color: white;
+    font-size: 15px;
+    width: 150px;
+}
+
+.fin .caja .izquierda .datos .texto p {
+    margin: 0;
+    color: white;
+    font-size: 15px;
+}
+
+.fin .caja .derecha {
+    display: flex;
+    align-items: end;
+}
+
+.fin .caja .derecha .datos {
+    display: flex;
+    align-items: center;
+}
+
+.fin .caja .derecha .datos a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.fin .caja .derecha .datos img {
+    height: 30px;
+    margin-left: 25px;
+}
